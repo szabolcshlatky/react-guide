@@ -1,0 +1,74 @@
+{
+  "resources": [
+    {
+      "id": 0,
+      "label": "Legacy.React",
+      "link": "https://legacy.reactjs.org/",
+      "free": true,
+      "description": "Class components (+setState, props without destructuring), Create-React-App, Internal React.Render using CDN links and Babel."
+    },
+    {
+      "id": 1,
+      "label": "Modern.React",
+      "link": "https://react.dev/",
+      "free": true,
+      "description": "Reference & Tutorial with examples and practices"
+    },
+    {
+      "id": 2,
+      "label": "Redux",
+      "link": "https://redux.js.org/",
+      "free": true,
+      "description": "Legacy: redux, redux-middleware & Modern: redux-toolkit"
+    },
+    {
+      "id": 3,
+      "label": "ReactRouter",
+      "link": "https://reactrouter.com/en/dev",
+      "free": true,
+      "description": "React-Router-DOM v6"
+    },
+    {
+      "id": 4,
+      "label": "Next.JS",
+      "link": "https://nextjs.org/",
+      "free": true,
+      "description": "React FullStack framework"
+    },
+    {
+      "id": 5,
+      "label": "NIX",
+      "link": "https://js.pages.nixdev.co/edu/presentations/react/#/_presentation_react",
+      "free": true,
+      "description": "It will be available after the course?"
+    },
+    {
+      "id": 6,
+      "label": "Net Ninja",
+      "link": "https://www.udemy.com/share/105lDc3@B2VdXPcIKtmPJ_ZPWGBbPxV7p9STMebcGKx6uHSY0ctfS-XcgI-gJVWp-EXhIPY09w==/",
+      "free": false,
+      "description": "Udemy course: React 17, React-Router v5, Firebase v8-9."
+    },
+    {
+      "id": 7,
+      "label": "App Brewery",
+      "link": "https://www.udemy.com/share/101qYw3@bgM7fJpMttKM_IkZm9LQo6UVFjkyKnLgdM98SXkKuoG3HdkBJUlZV1L0gFrApwQ9gQ==/",
+      "free": false,
+      "description": "Udemy course: Angela Yu's FullStack Bootcamp."
+    },
+    {
+      "id": 8,
+      "label": "Academind",
+      "link": "https://www.udemy.com/share/101Way3@UmO7F97FS97s1yVvksHJJ0ZzVnaipdJ7Or3g2SMWyw9G_po4JIuOFRdK3ACy8NoQxQ==/",
+      "free": false,
+      "description": "Udemy course: React 18 with every topic included."
+    },
+    {
+      "id": 9,
+      "label": "Maximillian Schwarzmüller",
+      "link": "https://www.udemy.com/share/104cpi3@83YPiQi8jweDW1EWkwlqalF-Rk_WJbZms5eVABv4ZzZaWns9bDNvDoXpJnWh4TIKtA==/",
+      "free": false,
+      "description": "Udemy course: Next(JS) steps"
+    }
+  ]
+}
