@@ -1,0 +1,84 @@
+{
+  "root": true,
+  "env": {
+    "commonjs": true,
+    "es2023": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:import/typescript",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [
+        ".eslintrc.{js,cjs,mjs,json}"
+      ],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "settings": {
+    "react": {
+      "version": "18.2"
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react-refresh"
+  ],
+  "rules": {
+    "prettier/prettier": "off",
+    "import/extensions": "off",
+    "react/require-default-props": "off",
+    "linebreak-style": "off",
+    "no-console": "error",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/parameter-properties": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/typedef": "off",
+    "react/prop-types": "error",
+    "react-refresh/only-export-components": "warn",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ]
+  }
+}

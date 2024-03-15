@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font:
+    normal normal normal 16px/1.6 sans-serif,
+    serif,
+    monospace,
+    cursive,
+    fantasy;
+}
+
+menu {
+  list-style: none;
+}
+
+menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+pre {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+ul,
+ol {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  margin-inline-start: 40px;
+}
+
+
+strong {
+  font-weight: bolder;
+}
+
+em {
+  font-style: oblique;
+}
+
+ins {
+  text-decoration: double underline;
+}
+
+ins::before,
+ins::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  background-color: yellow;
+}
+
+ins::before {
+  content: ' [insertion start] ';
+}
+
+ins::after {
+  content: ' [insertion end] ';
+}
+
+del {
+  text-decoration: double line-through;
+}
+
+del::before,
+del::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  background-color: tomato;
+}
+
+del::before {
+  content: ' [deletion start] ';
+}
+
+del::after {
+  content: ' [deletion end] ';
+}
+
+s::before,
+s::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+s::before {
+  content: ' [start of stricken text] ';
+}
+
+s::after {
+  content: ' [end of stricken text] ';
+}
+
+mark {
+  background-color: (internal value);
+  color: (internal value);
+}
+
+mark::before,
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  background-color: tomato;
+}
+
+mark::before {
+  content: ' [highlight start] ';
+}
+
+mark::after {
+  content: ' [highlight end] ';
+}
+
+data:hover::after {
+  content: '(' attr(value) ')';
+  font-size: smaller;
+}
+
+dfn::before {
+  content: '(';
+}
+
+dfn::after {
+  content: ')';
+}
+
+abbr {
+  display: inline;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+a:link,
+a:visited {
+  color: (internal value);
+  text-decoration: 0.5px dashed underline;
+  cursor: pointer;
+}
+
+a:link:active,
+a:visited:active {
+  color: (internal value);
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+code {
+  font: normal normal 1rem/1.6 monospace;
+  color: black;
+  word-wrap: break-word;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+samp {
+  font: normal normal 1rem/1.6 monospace;
+  color: crimson;
+  word-wrap: break-word;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+kbd {
+  font: normal normal 1rem/1.6 monospace;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+var {
+  font: italic bold 1rem/1.6 monospace;
+}
+
+iframe {
+  border: none;
+}
+
+button,
+input[type='button' i],
+input[type='submit' i],
+input[type='reset' i] {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}

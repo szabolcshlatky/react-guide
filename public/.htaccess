@@ -1,0 +1,143 @@
+
+# BEGIN WordPress
+# A `BEGIN WordPress` és az `END WordPress` sorok közötti tartalom dinamikusan lett létrehozva, és csak WordPress szűrők módosíthatják. E kettő sor közötti bármilyen kézi módosítás el fog veszni.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+
+# END WordPress
+
+Header set X-XSS-Protection "1; mode=block" 
+Header set X-Content-Type-Options nosniff 
+
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files> 
+ 
+RewriteEngine On 
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Custo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Download\ Demon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^eCatch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EirGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailSiphon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailWolf [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetRight [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetWeb! [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go!Zilla [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go-Ahead-Got-It [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GrabNet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Grafula [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^HMView [OR] 
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Stripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^InterGET [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JetCar [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JOC\ Web\ Spider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^larbin [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mass\ Downloader [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mister\ PiX [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Navroad [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NearSite [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Net\ Vampire [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Octopus [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Explorer [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Navigator [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Papa\ Foto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pavuk [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^RealDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ReGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SiteSnagger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SmartDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Teleport\ Pro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^VoidEYE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Image\ Collector [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebAuto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebFetch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebGo\ IS [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebLeacher [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebReaper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebSauger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ eXtractor [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ Quester [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebStripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebWhacker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Wget [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Widow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Zeus 
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^.* - [F,L]
+RewriteEngine on
+
+RewriteEngine on
+# Options +FollowSymlinks
+RewriteCond %{HTTP_REFERER} best-seo-software\.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} site7.free-floating-buttons\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} site10.free-floating-buttons\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} rankings-analytics\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} floating-share-buttons\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} sharok\.biz [NC,OR]
+RewriteCond %{HTTP_REFERER} mebel-alait\.ru [NC,OR]
+RewriteCond %{HTTP_REFERER} dlskype\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} s-master\.biz [NC,OR]
+RewriteCond %{HTTP_REFERER} netpics\.org [NC,OR]
+RewriteCond %{HTTP_REFERER} countravel\.net [NC,OR]
+RewriteCond %{HTTP_REFERER} play-euro-lotto\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} rankings-analytics\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} get-your-social-buttons\.info [NC,OR]
+RewriteCond %{HTTP_REFERER} adf\.ly [NC,OR]
+RewriteCond %{HTTP_REFERER} ranksonic\.net [NC,OR]
+RewriteCond %{HTTP_REFERER} alibestsale\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} copyrightclaims\.org [NC,OR]
+RewriteCond %{HTTP_REFERER} snip\.to [NC,OR]
+RewriteCond %{HTTP_REFERER} traffic2cash\.net [NC,OR]
+RewriteCond %{HTTP_REFERER} cyber-monday\.ga [NC,OR]
+RewriteCond %{HTTP_REFERER} black-friday\.ga [NC,OR]
+RewriteCond %{HTTP_REFERER} o-o-8-o-o\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} lsex\.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} quit-smoking\.ga [NC,OR]
+RewriteCond %{HTTP_REFERER} claim54429424.copyrightclaims\.org [NC,OR]
+RewriteCond %{HTTP_REFERER} blackhatworld\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} success-seo\.com
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* - [F]

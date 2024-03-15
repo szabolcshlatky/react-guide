@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "firefox-devtools.vscode-firefox-debug",
+    "EditorConfig.EditorConfig",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "MS-CEINTL.vscode-language-pack-hu",
+    "ritwickdey.LiveServer",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "ms-vscode.notepadplusplus-keybindings",
+    "idered.npm",
+    "christian-kohler.npm-intellisense",
+    "zhuangtongfa.material-theme",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "wayou.vscode-todo-highlight",
+    "ms-vscode-remote.remote-wsl",
+    "DavidAnson.vscode-markdownlint",
+    "redhat.vscode-xml",
+    "wallabyjs.console-ninja",
+    "vscodeshift.material-ui-snippets"
+  ],
+  "unwantedRecommendations": []
+}

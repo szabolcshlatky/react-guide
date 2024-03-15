@@ -1,0 +1,17 @@
+@use './mediaQueries' as *;
+@use './index' as *;
+@use './globals' as *;
+
+@include light-mode {
+  body {
+    color: $black;
+    background-color: $white;
+  }
+}
+
+@include dark-mode {
+  body {
+    color: $white;
+    background-color: $black;
+  }
+}

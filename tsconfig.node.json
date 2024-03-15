@@ -1,0 +1,200 @@
+{ /* Visit https://aka.ms/tsconfig to read more about this file */
+  "files": [], // https://www.typescriptlang.org/tsconfig#files
+  // "extends": "./tsconfig.node.json", // https://www.typescriptlang.org/tsconfig#extends
+  "include": [ // https://www.typescriptlang.org/tsconfig#include
+    "src/**/*",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [ // https://www.typescriptlang.org/tsconfig#exclude
+    "node_modules"
+  ],
+  "references": [ // https://www.typescriptlang.org/tsconfig#references
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": { // https://www.typescriptlang.org/tsconfig#compiler-options
+    /* Type Checking: https://www.typescriptlang.org/tsconfig#Type_Checking_6248 */
+    "allowUnreachableCode": false, // https://www.typescriptlang.org/tsconfig#allowUnreachableCode
+    "allowUnusedLabels": false, // https://www.typescriptlang.org/tsconfig#allowUnusedLabels
+    "alwaysStrict": true, // https://www.typescriptlang.org/tsconfig#alwaysStrict
+    "exactOptionalPropertyTypes": true, // https://www.typescriptlang.org/tsconfig#exactOptionalPropertyTypes
+    "noFallthroughCasesInSwitch": true, // https://www.typescriptlang.org/tsconfig#noFallthroughCasesInSwitch
+    "noImplicitAny": true, // https://www.typescriptlang.org/tsconfig#noImplicitAny
+    "noImplicitOverride": true, // https://www.typescriptlang.org/tsconfig#noImplicitOverride
+    "noImplicitReturns": true, // https://www.typescriptlang.org/tsconfig#noImplicitReturns
+    "noImplicitThis": true, // https://www.typescriptlang.org/tsconfig#noImplicitThis
+    "noPropertyAccessFromIndexSignature": true, // https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature
+    "noUncheckedIndexedAccess": true, // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess
+    "noUnusedLocals": true, // https://www.typescriptlang.org/tsconfig#noUnusedLocals
+    "noUnusedParameters": true, // https://www.typescriptlang.org/tsconfig#noUnusedParameters
+    "strict": true, // https://www.typescriptlang.org/tsconfig#strict
+    "strictBindCallApply": true, // https://www.typescriptlang.org/tsconfig#strictBindCallApply
+    "strictFunctionTypes": true, // https://www.typescriptlang.org/tsconfig#strictFunctionTypes
+    "strictNullChecks": true, // https://www.typescriptlang.org/tsconfig#strictNullChecks
+    "strictPropertyInitialization": true, // https://www.typescriptlang.org/tsconfig#strictPropertyInitialization
+    "useUnknownInCatchVariables": true, // https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables
+    /* Modules: https://www.typescriptlang.org/tsconfig#Modules_6244 */
+    "allowArbitraryExtensions": true, // https://www.typescriptlang.org/tsconfig#allowArbitraryExtensions
+    "allowImportingTsExtensions": true, // https://www.typescriptlang.org/tsconfig#allowImportingTsExtensions
+    "allowUmdGlobalAccess": true, // https://www.typescriptlang.org/tsconfig#allowUmdGlobalAccess
+    "baseUrl": "./", // https://www.typescriptlang.org/tsconfig#baseUrl
+    "customConditions": [ // https://www.typescriptlang.org/tsconfig#customConditions
+      "production"
+    ],
+    "module": "CommonJS", // https://www.typescriptlang.org/tsconfig#module
+    "moduleResolution": "NodeNext", // https://www.typescriptlang.org/tsconfig#moduleResolution
+    "moduleSuffixes": [ // https://www.typescriptlang.org/tsconfig#moduleSuffixes
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "json"
+    ],
+    "noResolve": false, // https://www.typescriptlang.org/tsconfig#noResolve
+    "paths": { // https://www.typescriptlang.org/tsconfig#paths
+      "@/*": [
+        "src/*"
+      ],
+      "jquery": [
+        "node_modules/jquery/dist/jquery.min.js"
+      ]
+    },
+    "resolveJsonModule": true, // https://www.typescriptlang.org/tsconfig#resolveJsonModule
+    "resolvePackageJsonExports": true, // https://www.typescriptlang.org/tsconfig#resolvePackageJsonExports
+    "resolvePackageJsonImports": true, // https://www.typescriptlang.org/tsconfig#resolvePackageJsonImports
+    "rootDir": "./", // https://www.typescriptlang.org/tsconfig#rootDir
+    "rootDirs": [ // https://www.typescriptlang.org/tsconfig#rootDirs
+      "src",
+      "node_modules"
+    ],
+    "typeRoots": [ // https://www.typescriptlang.org/tsconfig#typeRoots
+      "node_modules/@types"
+    ],
+    "types": [ // https://www.typescriptlang.org/tsconfig#types
+      "jquery"
+    ],
+    /* Emit: https://www.typescriptlang.org/tsconfig#Emit_6246 */
+    "declaration": false, // https://www.typescriptlang.org/tsconfig#declaration
+    "declarationDir": "./", // https://www.typescriptlang.org/tsconfig#declarationDir
+    "declarationMap": false, // https://www.typescriptlang.org/tsconfig#declarationMap
+    "downlevelIteration": true, // https://www.typescriptlang.org/tsconfig#downlevelIteration
+    "emitBOM": false, // https://www.typescriptlang.org/tsconfig#emitBOM
+    "emitDeclarationOnly": false, // https://www.typescriptlang.org/tsconfig#emitDeclarationOnly
+    "importHelpers": false, // https://www.typescriptlang.org/tsconfig#importHelpers
+    "importsNotUsedAsValues": "error", // https://www.typescriptlang.org/tsconfig#importsNotUsedAsValues
+    "inlineSourceMap": true, // https://www.typescriptlang.org/tsconfig#inlineSourceMap
+    "inlineSources": true, // https://www.typescriptlang.org/tsconfig#inlineSources
+    "mapRoot": "./", // https://www.typescriptlang.org/tsconfig#mapRoot
+    "newLine": "crlf", // https://www.typescriptlang.org/tsconfig#newLine
+    "noEmit": true, // https://www.typescriptlang.org/tsconfig#noEmit
+    "noEmitHelpers": false, // https://www.typescriptlang.org/tsconfig#noEmitHelpers
+    "noEmitOnError": false, // https://www.typescriptlang.org/tsconfig#noEmitOnError
+    "outDir": "./public/scripts", // https://www.typescriptlang.org/tsconfig#outDir
+    "outFile": "./public/scripts/bundle.js", // https://www.typescriptlang.org/tsconfig#outFile
+    "preserveConstEnums": false, // https://www.typescriptlang.org/tsconfig#preserveConstEnums
+    "preserveValueImports": false, // https://www.typescriptlang.org/tsconfig#preserveValueImports
+    "removeComments": false, // https://www.typescriptlang.org/tsconfig#removeComments
+    "sourceMap": true, // https://www.typescriptlang.org/tsconfig#sourceMap
+    "sourceRoot": "./", // https://www.typescriptlang.org/tsconfig#sourceRoot
+    "stripInternal": false, // https://www.typescriptlang.org/tsconfig#stripInternal
+    /* JavaScript Support: https://www.typescriptlang.org/tsconfig#JavaScript_Support_6247 */
+    "allowJs": true, // https://www.typescriptlang.org/tsconfig#allowJs
+    "checkJs": true, // https://www.typescriptlang.org/tsconfig#checkJs
+    "maxNodeModuleJsDepth": 0, // https://www.typescriptlang.org/tsconfig#maxNodeModuleJsDepth
+    /* Editor Support: https://www.typescriptlang.org/tsconfig#Editor_Support_6249 */
+    "disableSizeLimit": true, // https://www.typescriptlang.org/tsconfig#disableSizeLimit
+    "plugins": [ // https://www.typescriptlang.org/tsconfig#plugins
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ],
+    /* Interop Constraints: https://www.typescriptlang.org/tsconfig#Interop_Constraints_6252 */
+    "allowSyntheticDefaultImports": true, // https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports
+    "esModuleInterop": true, // https://www.typescriptlang.org/tsconfig#esModuleInterop
+    "forceConsistentCasingInFileNames": true, // https://www.typescriptlang.org/tsconfig#forceConsistentCasingInFileNames
+    "isolatedModules": false, // https://www.typescriptlang.org/tsconfig#isolatedModules
+    "preserveSymlinks": false, // https://www.typescriptlang.org/tsconfig#preserveSymlinks
+    "verbatimModuleSyntax": false, // https://www.typescriptlang.org/tsconfig#verbatimModuleSyntax
+    /* Backwards Compatibility: https://www.typescriptlang.org/tsconfig#Backwards_Compatibility_6253 */
+    "charset": "utf8", // https://www.typescriptlang.org/tsconfig#charset
+    "keyofStringsOnly": false, // https://www.typescriptlang.org/tsconfig#keyofStringsOnly
+    "noImplicitUseStrict": false, // https://www.typescriptlang.org/tsconfig#noImplicitUseStrict
+    "noStrictGenericChecks": false, // https://www.typescriptlang.org/tsconfig#noStrictGenericChecks
+    "out": "./public/scripts/bundle.js", // https://www.typescriptlang.org/tsconfig#out
+    "suppressExcessPropertyErrors": false, // https://www.typescriptlang.org/tsconfig#suppressExcessPropertyErrors
+    "suppressImplicitAnyIndexErrors": false, // https://www.typescriptlang.org/tsconfig#suppressImplicitAnyIndexErrors
+    /* Language and Environment: https://www.typescriptlang.org/tsconfig#Language_and_Environment_6254 */
+    "emitDecoratorMetadata": true, // https://www.typescriptlang.org/tsconfig#emitDecoratorMetadata
+    "experimentalDecorators": true, // https://www.typescriptlang.org/tsconfig#experimentalDecorators
+    "jsx": "preserve", // https://www.typescriptlang.org/tsconfig#jsx
+    "jsxFactory": "React.createElement", // https://www.typescriptlang.org/tsconfig#jsxFactory
+    "jsxFragmentFactory": "React.Fragment", // https://www.typescriptlang.org/tsconfig#jsxFragmentFactory
+    "jsxImportSource": "react", // https://www.typescriptlang.org/tsconfig#jsxImportSource
+    "lib": [ // https://www.typescriptlang.org/tsconfig#lib
+      "ES5",
+      "ESNext",
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "moduleDetection": "auto", // https://www.typescriptlang.org/tsconfig#moduleDetection
+    "noLib": false, // https://www.typescriptlang.org/tsconfig#noLib
+    "reactNamespace": "React", // https://www.typescriptlang.org/tsconfig#reactNamespace
+    "target": "ES3", // https://www.typescriptlang.org/tsconfig#target
+    "useDefineForClassFields": true, // https://www.typescriptlang.org/tsconfig#useDefineForClassFields
+    /* Compiler Diagnostics: https://www.typescriptlang.org/tsconfig#Compiler_Diagnostics_6251 */
+    "diagnostics": true, // https://www.typescriptlang.org/tsconfig#diagnostics
+    "explainFiles": true, // https://www.typescriptlang.org/tsconfig#explainFiles
+    "extendedDiagnostics": true, // https://www.typescriptlang.org/tsconfig#extendedDiagnostics
+    "generateCpuProfile": "profile.cpuprofile", // https://www.typescriptlang.org/tsconfig#generateCpuProfile
+    "listEmittedFiles": true, // https://www.typescriptlang.org/tsconfig#listEmittedFiles
+    "listFiles": true, // https://www.typescriptlang.org/tsconfig#listFiles
+    "traceResolution": true, // https://www.typescriptlang.org/tsconfig#traceResolution
+    /* Projects: https://www.typescriptlang.org/tsconfig#Projects_6255 */
+    "composite": true, // https://www.typescriptlang.org/tsconfig#composite
+    "disableReferencedProjectLoad": false, // https://www.typescriptlang.org/tsconfig#disableReferencedProjectLoad
+    "disableSolutionSearching": false, // https://www.typescriptlang.org/tsconfig#disableSolutionSearching
+    "disableSourceOfProjectReferenceRedirect": false, // https://www.typescriptlang.org/tsconfig#disableSourceOfProjectReferenceRedirect
+    "incremental": false, // https://www.typescriptlang.org/tsconfig#incremental
+    "tsBuildInfoFile": "./", // https://www.typescriptlang.org/tsconfig#tsBuildInfoFile
+    /* Output Formatting: https://www.typescriptlang.org/tsconfig#Output_Formatting_6256 */
+    "noErrorTruncation": false, // https://www.typescriptlang.org/tsconfig#noErrorTruncation
+    "preserveWatchOutput": true, // https://www.typescriptlang.org/tsconfig#preserveWatchOutput
+    "pretty": true, // https://www.typescriptlang.org/tsconfig#pretty
+    /* Completeness: https://www.typescriptlang.org/tsconfig#Completeness_6257 */
+    "skipDefaultLibCheck": true, // https://www.typescriptlang.org/tsconfig#skipDefaultLibCheck
+    "skipLibCheck": true, // https://www.typescriptlang.org/tsconfig#skipLibCheck
+    /* Command Line: https://www.typescriptlang.org/tsconfig#Command_line_Options_6171 */
+    /* Watch Options: https://www.typescriptlang.org/tsconfig#Watch_and_Build_Modes_6250 */
+    "assumeChangesOnlyAffectDirectDependencies": true, // https://www.typescriptlang.org/tsconfig#assumeChangesOnlyAffectDirectDependencies
+  },
+  "watchOptions": { // https://www.typescriptlang.org/tsconfig#watch-options
+    "watchFile": "useFsEvents", // https://www.typescriptlang.org/tsconfig#watch-watchFile
+    "watchDirectory": "useFsEvents", // https://www.typescriptlang.org/tsconfig#watch-watchDirectory
+    "fallbackPolling": "synchronousWatchDirectory", // https://www.typescriptlang.org/tsconfig#watch-fallbackPolling
+    "synchronousWatchDirectory": true, // https://www.typescriptlang.org/tsconfig#watch-synchronousWatchDirectory
+    "excludeDirectories": [ // https://www.typescriptlang.org/tsconfig#watch-excludeDirectories
+      "**/node_modules",
+      "_build",
+      "temp/*"
+    ],
+    "excludeFiles": [ // https://www.typescriptlang.org/tsconfig#watch-excludeFiles
+      "temp/file.ts"
+    ]
+  },
+  "typeAcquisition": { // https://www.typescriptlang.org/tsconfig#type-acquisition
+    "enable": true, // https://www.typescriptlang.org/tsconfig#type-enable
+    "include": [ // https://www.typescriptlang.org/tsconfig#type-include
+      "jquery"
+    ],
+    "exclude": [ // https://www.typescriptlang.org/tsconfig#type-exclude
+      "jest",
+      "mocha"
+    ],
+    "disableFilenameBasedTypeAcquisition": false, // https://www.typescriptlang.org/tsconfig#type-disableFilenameBasedTypeAcquisition
+  }
+}
