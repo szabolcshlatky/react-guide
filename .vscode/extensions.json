@@ -20,7 +20,8 @@
     "DavidAnson.vscode-markdownlint",
     "redhat.vscode-xml",
     "wallabyjs.console-ninja",
-    "vscodeshift.material-ui-snippets"
+    "vscodeshift.material-ui-snippets",
+    "styled-components.vscode-styled-components"
   ],
   "unwantedRecommendations": []
 }
